@@ -1,3 +1,5 @@
+// Pietro Fortunato de Camargo Correa
+
 
 #include <iostream>
 using namespace std;
@@ -150,7 +152,22 @@ void excluirElemento()
 
 void buscarElemento()
 {
-	
+	NO* aux = primeiro;
+	int valP = NULL;
+
+	cout << "Digite o elemento que quer buscar: " << endl;
+
+	while (aux != NULL) {
+		if (aux->valor == valP) {
+			cout << "Elemento" << valP << "encontrado na lista" << endl;
+			break;
+		}
+		aux = aux->prox;
+		else{
+			cout << "Elemento" << valP << "nao encontrado na lista" << endl;
+}
+	}
+		
 }
 
 
